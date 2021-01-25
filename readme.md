@@ -2,9 +2,9 @@ fork from https://gitlab.com/gitlab-org/project-templates/kotlin-native-linux
 with simple script to copy shared libs 
 and so add docker support for tiny images *FROM SCRATCH* :)
 
-init_shared_libs.sh copies all the visible libs from the build dir to a shared folder
+[init_shared_libs.sh](init_shared_libs.sh) copies all the visible libs from the build dir to a shared folder
 idea inspired by Marc Reichelt - https://dev.to/mreichelt/christmas-hacking-squeezing-kotlin-native-into-docker-6ao
-the Dockerfile copies the shared folders to the docker root dir
+the [Dockerfile](Dockerfile) copies the shared folders to the docker root dir
 
 > Some final note: If you compile your own (real) Kotlin Native program, you probably need more files than you might think. Using https connections? I bet you'll need the SSL root certificates provided in each Linux distro. Using some Kotlin Native libs? Maybe some of those add references to other native .so libs, and your program won't start otherwise. So always test sensibly!
 
