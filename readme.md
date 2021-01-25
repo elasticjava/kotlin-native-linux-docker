@@ -1,3 +1,9 @@
+fork from https://gitlab.com/gitlab-org/project-templates/kotlin-native-linux
+with simple script to copy shared libs 
+and so add docker support for tiny images *FROM SCRATCH* :)
+
+--- original readme:
+
 # Kotlin Linux Template
 
 A basic template for developing Linux programs using 
